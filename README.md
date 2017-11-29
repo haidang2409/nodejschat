@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+
+
+# qlttd
+
+
+
+## Usage
+
+
+
+## Developing
+
+
+
+### Tools
+
+Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
+ ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
+
+Nodeclipse is free open-source project that grows with your contributions.
+=======
+# qlttd
+Quản lý thu tiền điện
+>>>>>>> d3cd4b17fd57ee9b53ce4d582619b2153f2c0748

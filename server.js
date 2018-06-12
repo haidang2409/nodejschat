@@ -1,16 +1,16 @@
 var express = require('express');
 var app = module.exports = express();
 var http = require('http');
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-var server = http.createServer(app).listen(server_port, server_ip_address,function(){
-	console.log('Listening port : %s ', server_port);
-});
+// var server_port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+// var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+// var server = http.createServer(app).listen(server_port, server_ip_address,function(){
+// 	console.log('Listening port : %s ', server_port);
+// });
 //
 //var express = require('express');
 //var app  = express();
-// var server = require('http').createServer(app);
-// server.listen(process.env.PORT || 3001);
+var server = require('http').createServer(app);
+server.listen(process.env.PORT || 3001);
 //
 var io = require('socket.io').listen(server);
 app.use(express.logger('dev'));
